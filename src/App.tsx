@@ -2,10 +2,23 @@ import './App.css'
 
 function App() {
   return (
+
     <>
 
+
+
+
+
+
+
+
+
+
+
+
+
       {/* nab section  */}
-      <div className="navbar bg-base-100 shadow-sm">
+      <div className="navbar bg-base-100 shadow-sm block  sm:bg-amber-700">
         <div className="flex-1">
         </div>
         <div className="flex-none">
