@@ -1,10 +1,10 @@
 import './App.css'
-
+import nextjs from "./assets/nextjs-icon.svg";
+import firebase from "./assets/firebase-icon.svg";
 function App() {
   return (
 
     <>
-
 
 
 
@@ -37,6 +37,8 @@ function App() {
 
       <div className="flex flex-col md:flex-row">
         <div className="card bg-base-100 w-96 shadow-sm m-10 cursor-pointer">
+          {/* <div className="card bg-base-100 w-full max-w-md shadow-sm m-4 cursor-pointer"> */}
+
           <figure>
             <img
               src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
@@ -58,11 +60,31 @@ function App() {
               alt="Shoes" />
           </figure>
           <div className="card-body">
-            <h2 className="card-title">Card Title</h2>
-            <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
-            <div className="card-actions justify-end">
-              <button className="btn btn-primary">More Details</button>
+            <h2 className="card-title">Choose-mvp</h2>
+            <p>
+              A web site to vote who is the nba Mvp for 2025 season
+            </p>
+            <details>
+              <summary>Why I build this app?</summary>
+              <ul>
+                <li>To learn how to build a full stack app...</li>
+                <li>To learn how to use nextjs</li>
+              </ul>
+            </details>
+            <div className='flex flex-row items-center'>
+              <img src={firebase} className='w-15 h-15' />
+
+              <img src={nextjs} className='w-15 h-15' />
             </div>
+
+
+            <div className="card-actions justify-end">
+              <a href="https://choose-mvp.vercel.app/" target="_blank">
+                <button className="btn btn-primary">   Show</button>
+              </a>
+            </div>
+
+
           </div>
         </div>
       </div>
