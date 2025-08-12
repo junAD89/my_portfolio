@@ -1,6 +1,17 @@
 import './App.css'
 import nextjs from "./assets/nextjs-icon.svg";
 import firebase from "./assets/firebase-icon.svg";
+import ionic from "./assets/ionic-icon-svgrepo-com.svg";
+import nodejs from "./assets/node-js-svgrepo-com.svg";
+import ai from "./assets/ai-ai-svgrepo-com.svg";
+import capacitor from "./assets/capacitor-svgrepo-com.svg";
+// import paypal from "./assets/paypal-svgrepo-com.svg";
+
+
+// project image 
+import chooseMvpImage from "./assets/project-image/choose-mvp.png";
+import findLoveImage from "./assets/project-image/findLoveimage.png";
+
 function App() {
   return (
 
@@ -36,7 +47,7 @@ function App() {
       </div>
 
       <div className="flex flex-col md:flex-row">
-        <div className="card bg-base-100 w-96 shadow-sm m-10 cursor-pointer">
+        <div className="card bg-base-100 border-2 border-amber-200 w-96 shadow-sm m-10 cursor-pointer">
           {/* <div className="card bg-base-100 w-full max-w-md shadow-sm m-4 cursor-pointer"> */}
 
           <figure>
@@ -45,18 +56,32 @@ function App() {
               alt="Shoes" />
           </figure>
           <div className="card-body">
-            <h2 className="card-title">Card Title</h2>
-            <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
+            <h2 className="card-title">Find love</h2>
+
+            <p>
+              An app who use ai to find your love
+            </p>
             <div className="card-actions justify-end">
               <button className="btn btn-primary">More Details</button>
             </div>
           </div>
+
         </div>
 
-        <div className="card bg-base-100 w-96 shadow-sm m-10 cursor-pointer">
+
+
+
+
+
+
+
+
+
+        <div className="card bg-base-100 border-2 border-amber-200 w-96 shadow-sm m-10 cursor-pointer">
           <figure>
             <img
-              src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+              // src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+              src={chooseMvpImage}
               alt="Shoes" />
           </figure>
           <div className="card-body">
@@ -69,6 +94,8 @@ function App() {
               <ul>
                 <li>To learn how to build a full stack app...</li>
                 <li>To learn how to use nextjs</li>
+                <li>To learn Cloud Firestore and query Snapshot </li>
+
               </ul>
             </details>
             <div className='flex flex-row items-center'>
@@ -88,6 +115,50 @@ function App() {
           </div>
         </div>
       </div>
+
+
+
+      <div className="card bg-base-100 border-2 border-amber-200 w-96 shadow-sm m-10 cursor-pointer">
+        <figure>
+          <img
+            // src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+            src={findLoveImage}
+            alt="Shoes" />
+        </figure>
+        <div className="card-body">
+          <h2 className="card-title">Find love</h2>
+          <p>
+            An app who use ai to find your love
+          </p>
+          <details>
+            <summary>Why I build this app?</summary>
+            <ul>
+              <li>To learn how to build a full stack app...</li>
+              <li>To learn how to use nextjs</li>
+              <li>To learn Cloud Firestore and query Snapshot </li>
+
+            </ul>
+          </details>
+          <div className='flex flex-row items-center'>
+            <img src={ionic} className='w-15 h-15' />
+            <img src={nodejs} className='w-15 h-15' />
+            <img src={ai} className='w-15 h-15' />
+            <img src={firebase} className='w-15 h-15' />
+            <img src={capacitor} className='w-15 h-15' />
+          </div>
+
+
+          <div className="card-actions justify-end">
+            <a href="https://choose-mvp.vercel.app/" target="_blank">
+              <button className="btn btn-primary">   Show</button>
+            </a>
+          </div>
+
+
+        </div>
+      </div>
+
+
     </>
   )
 }
