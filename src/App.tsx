@@ -1,3 +1,4 @@
+import { Toaster, toast } from 'sonner';
 import './App.css'
 import nextjs from "./assets/nextjs-icon.svg";
 import firebase from "./assets/firebase-icon.svg";
@@ -6,7 +7,9 @@ import nodejs from "./assets/node-js-svgrepo-com.svg";
 import ai from "./assets/ai-ai-svgrepo-com.svg";
 import capacitor from "./assets/capacitor-svgrepo-com.svg";
 // import paypal from "./assets/paypal-svgrepo-com.svg";
-
+import reactNativeIcon from "./assets/react-svgrepo-com.svg"
+import expoIcon from "./assets/expo-svgrepo-com.svg";
+import sleepSoundIcon from "./assets/project-image/playStoreIcon.jpg";
 
 // project image 
 import chooseMvpImage from "./assets/project-image/choose-mvp.png";
@@ -19,7 +22,7 @@ function App() {
 
 
 
-
+      <Toaster position='top-left' richColors={true} />
 
 
 
@@ -47,23 +50,39 @@ function App() {
       </div>
 
       <div className="flex flex-col md:flex-row">
-        <div className="card bg-base-100 border-2 border-amber-200 w-96 shadow-sm m-10 cursor-pointer">
+        <div className="card bg-base-100 border-2 border-amber-200 w-76 shadow-sm m-10 cursor-pointer">
           {/* <div className="card bg-base-100 w-full max-w-md shadow-sm m-4 cursor-pointer"> */}
 
           <figure>
             <img
-              src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+              src={sleepSoundIcon}
+              className='w-full h-70'
+
               alt="Shoes" />
           </figure>
-          <div className="card-body">
-            <h2 className="card-title">Find love</h2>
+          <div className="card-body bg-sky-700">
+            <h2 className="card-title text-2xl font-bold">Sleep Sounds & Meditation</h2>
 
-            <p>
-              An app who use ai to find your love
+            <p className='text-lg'>
+              Discover inner peace and transform your nights with our curated collection of soothing sleep sounds and guided meditation experiences. Let tranquility guide you to better sleep and a calmer mind.
             </p>
-            <div className="card-actions justify-end">
-              <button className="btn btn-primary">More Details</button>
+            <div className='flex flex-row items-center justify-between'>
+
+              <div className='flex flex-row items-center'>
+                <img src={reactNativeIcon} className='w-15 h-15' />
+
+                <img src={expoIcon} className='w-15 h-15' />
+              </div>
+
+
+              <div className="card-actions justify-end items-end">
+                <a onClick={() => toast.error('Sorry the app is not available')} target="_blank">
+                  <button className="btn btn-primary" >Show</button>
+                </a>
+              </div>
             </div>
+
+
           </div>
 
         </div>
@@ -77,16 +96,17 @@ function App() {
 
 
 
-        <div className="card bg-base-100 border-2 border-amber-200 w-96 shadow-sm m-10 cursor-pointer">
+        <div className="card bg-base-100 border-2 border-amber-200 w-76 shadow-sm m-10 cursor-pointer">
           <figure>
             <img
               // src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
               src={chooseMvpImage}
+              className='w-full h-50'
               alt="Shoes" />
           </figure>
-          <div className="card-body">
-            <h2 className="card-title">Choose-mvp</h2>
-            <p>
+          <div className="card-body bg-sky-700">
+            <h2 className="card-title text-2xl font-bold">Choose-mvp</h2>
+            <p className='text-lg'>
               A web site to vote who is the nba Mvp for 2025 season
             </p>
             <details>
@@ -98,17 +118,19 @@ function App() {
 
               </ul>
             </details>
-            <div className='flex flex-row items-center'>
-              <img src={firebase} className='w-15 h-15' />
+            <div className='flex justify-between items-center'>
+              <div className='flex flex-row items-center'>
+                <img src={firebase} className='w-15 h-15' />
 
-              <img src={nextjs} className='w-15 h-15' />
-            </div>
+                <img src={nextjs} className='w-15 h-15' />
+              </div>
 
 
-            <div className="card-actions justify-end">
-              <a href="https://choose-mvp.vercel.app/" target="_blank">
-                <button className="btn btn-primary">   Show</button>
-              </a>
+              <div className="card-actions justify-end">
+                <a href="https://choose-mvp.vercel.app/" target="_blank">
+                  <button className="btn btn-primary">   Show</button>
+                </a>
+              </div>
             </div>
 
 
@@ -118,7 +140,7 @@ function App() {
 
 
 
-      <div className="card bg-base-100 border-2 border-amber-200 w-96 shadow-sm m-10 cursor-pointer">
+      <div className="card bg-base-100 border-2 border-amber-200 w-76 shadow-sm m-10 cursor-pointer">
         <figure>
           <img
             // src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
