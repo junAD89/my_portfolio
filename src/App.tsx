@@ -6,7 +6,7 @@ import ionic from "./assets/ionic-icon-svgrepo-com.svg";
 import nodejs from "./assets/node-js-svgrepo-com.svg";
 import ai from "./assets/ai-ai-svgrepo-com.svg";
 import capacitor from "./assets/capacitor-svgrepo-com.svg";
-// import paypal from "./assets/paypal-svgrepo-com.svg";
+import paypal from "./assets/paypal-svgrepo-com.svg";
 import reactNativeIcon from "./assets/react-svgrepo-com.svg"
 import expoIcon from "./assets/expo-svgrepo-com.svg";
 import sleepSoundIcon from "./assets/project-image/playStoreIcon.jpg";
